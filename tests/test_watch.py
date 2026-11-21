@@ -10,7 +10,7 @@ import watch  # noqa: E402
 
 ROOT = os.path.join(os.path.dirname(__file__), "..", "state")
 RULES = json.load(open(os.path.join(ROOT, "rules.json"), encoding="utf-8"))
-STATE = json.load(open(os.path.join(ROOT, "state.json"), encoding="utf-8"))
+STATE = json.load(open(os.path.join(os.path.dirname(__file__), "fixture_state.json"), encoding="utf-8"))
 
 
 def closes(start, step, n=60, end="2026-11-21"):

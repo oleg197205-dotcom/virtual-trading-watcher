@@ -210,7 +210,8 @@ class Run:
                    pnl=r2(pnl), pnlPct=round(pnl / pos["cost"] * 100, 2), cost=r2(pos["cost"]),
                    entry=pos["entry"], openedAt=pos["openedAt"])
         sign = "+" if pnl >= 0 else ""
-        self.event(f"Продали {asset} по {px(price)}: {reason} Итог {sign}{money(pnl)} ({sign}{pnl / pos['cost'] * 100:.1f}%).", book, "sell")
+        pct = f"{pnl / pos['cost'] * 100:+.1f}".replace(".", ",").replace("-", "−")
+        self.event(f"Продали {asset} по {px(price)}: {reason} Итог {sign}{money(pnl)} ({pct}%).", book, "sell")
         return pnl
 
     def buy(self, book: str, asset: str, price: float, qty: float, pos_extra: dict, reason: str):
