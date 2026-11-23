@@ -1,0 +1,296 @@
+{
+ "S4": {
+  "1h": {
+   "fee0.1%": {
+    "trades": 1350,
+    "winRate": 25.0,
+    "avgR": -0.185,
+    "totalR": -249.32,
+    "usd": -24932.35,
+    "maxDrawdownR": -272.46,
+    "best": 8.12,
+    "worst": -1.2
+   },
+   "fee0.4%": {
+    "trades": 1350,
+    "winRate": 25.0,
+    "avgR": -0.785,
+    "totalR": -1059.39,
+    "usd": -105938.56,
+    "maxDrawdownR": -1066.51,
+    "best": 7.5,
+    "worst": -1.8
+   },
+   "exits": {
+    "stop": 1012,
+    "target": 338,
+    "time": 0
+   },
+   "byYearR_fee0.1%": {
+    "2023": 19.0,
+    "2024": -25.5,
+    "2025": -83.7,
+    "2026": -159.1
+   }
+  },
+  "1h_trendfilter": {
+   "fee0.1%": {
+    "trades": 827,
+    "winRate": 27.0,
+    "avgR": -0.1,
+    "totalR": -82.71,
+    "usd": -8270.77,
+    "maxDrawdownR": -136.68,
+    "best": 8.12,
+    "worst": -1.2
+   },
+   "fee0.4%": {
+    "trades": 827,
+    "winRate": 27.0,
+    "avgR": -0.7,
+    "totalR": -579.16,
+    "usd": -57915.6,
+    "maxDrawdownR": -586.28,
+    "best": 7.5,
+    "worst": -1.8
+   },
+   "exits": {
+    "stop": 604,
+    "target": 223,
+    "time": 0
+   },
+   "byYearR_fee0.1%": {
+    "2023": 21.8,
+    "2024": 15.1,
+    "2025": -38.5,
+    "2026": -81.2
+   }
+  },
+  "4h": {
+   "fee0.1%": {
+    "trades": 449,
+    "winRate": 24.7,
+    "avgR": -0.159,
+    "totalR": -71.43,
+    "usd": -7143.34,
+    "maxDrawdownR": -75.89,
+    "best": 12.45,
+    "worst": -1.2
+   },
+   "fee0.4%": {
+    "trades": 449,
+    "winRate": 24.7,
+    "avgR": -0.759,
+    "totalR": -340.89,
+    "usd": -34088.86,
+    "maxDrawdownR": -340.89,
+    "best": 11.82,
+    "worst": -1.8
+   },
+   "exits": {
+    "stop": 338,
+    "target": 111,
+    "time": 0
+   },
+   "byYearR_fee0.1%": {
+    "2023": -9.8,
+    "2024": -6.4,
+    "2025": -6.5,
+    "2026": -48.7
+   }
+  },
+  "4h_trendfilter": {
+   "fee0.1%": {
+    "trades": 270,
+    "winRate": 21.5,
+    "avgR": -0.266,
+    "totalR": -71.75,
+    "usd": -7175.0,
+    "maxDrawdownR": -71.75,
+    "best": 12.45,
+    "worst": -1.2
+   },
+   "fee0.4%": {
+    "trades": 270,
+    "winRate": 21.5,
+    "avgR": -0.866,
+    "totalR": -233.7,
+    "usd": -23369.67,
+    "maxDrawdownR": -233.7,
+    "best": 11.82,
+    "worst": -1.8
+   },
+   "exits": {
+    "stop": 212,
+    "target": 58,
+    "time": 0
+   },
+   "byYearR_fee0.1%": {
+    "2023": -10.2,
+    "2024": -31.3,
+    "2025": 11.3,
+    "2026": -41.5
+   }
+  }
+ },
+ "S5": {
+  "BTC": {
+   "gaps": 700,
+   "fillRate": 68.3,
+   "baselineRate": 67.0
+  },
+  "ETH": {
+   "gaps": 973,
+   "fillRate": 74.0,
+   "baselineRate": 71.3
+  },
+  "SOL": {
+   "gaps": 1178,
+   "fillRate": 75.6,
+   "baselineRate": 75.7
+  },
+  "XRP": {
+   "gaps": 965,
+   "fillRate": 74.0,
+   "baselineRate": 73.2
+  },
+  "DOGE": {
+   "gaps": 1178,
+   "fillRate": 77.1,
+   "baselineRate": 76.7
+  },
+  "AVAX": {
+   "gaps": 1498,
+   "fillRate": 78.2,
+   "baselineRate": 77.1
+  },
+  "LINK": {
+   "gaps": 1334,
+   "fillRate": 76.2,
+   "baselineRate": 75.3
+  }
+ },
+ "S6": {
+  "buyHoldAll7": {
+   "final": 9785.0,
+   "returnPct": -1.8,
+   "maxDrawdownPct": -71.7,
+   "byYearPct": {
+    "2023": 28.7,
+    "2024": 87.8,
+    "2025": -36.8,
+    "2026": -43.5
+   }
+  },
+  "buyHoldBTC": {
+   "final": 16192.0,
+   "returnPct": 62.6,
+   "maxDrawdownPct": -53.1,
+   "byYearPct": {
+    "2023": 12.0,
+    "2024": 111.1,
+    "2025": -7.3,
+    "2026": -30.8
+   }
+  },
+  "lb14_top1": {
+   "final": 40494.0,
+   "returnPct": 304.9,
+   "maxDrawdownPct": -69.6,
+   "byYearPct": {
+    "2023": 24.9,
+    "2024": 272.2,
+    "2025": -38.4,
+    "2026": 30.7
+   }
+  },
+  "lb14_top2": {
+   "final": 32441.0,
+   "returnPct": 224.4,
+   "maxDrawdownPct": -62.2,
+   "byYearPct": {
+    "2023": 30.2,
+    "2024": 253.0,
+    "2025": -39.0,
+    "2026": 8.8
+   }
+  },
+  "lb14_top3": {
+   "final": 26246.0,
+   "returnPct": 162.5,
+   "maxDrawdownPct": -55.9,
+   "byYearPct": {
+    "2023": 17.3,
+    "2024": 184.4,
+    "2025": -26.7,
+    "2026": 1.8
+   }
+  },
+  "lb28_top1": {
+   "final": 18045.0,
+   "returnPct": 80.5,
+   "maxDrawdownPct": -64.6,
+   "byYearPct": {
+    "2023": -15.4,
+    "2024": 138.9,
+    "2025": -5.7,
+    "2026": -22.3
+   }
+  },
+  "lb28_top2": {
+   "final": 20833.0,
+   "returnPct": 108.3,
+   "maxDrawdownPct": -59.4,
+   "byYearPct": {
+    "2023": -6.0,
+    "2024": 98.6,
+    "2025": -1.1,
+    "2026": -5.9
+   }
+  },
+  "lb28_top3": {
+   "final": 16361.0,
+   "returnPct": 63.6,
+   "maxDrawdownPct": -56.4,
+   "byYearPct": {
+    "2023": -6.1,
+    "2024": 69.8,
+    "2025": 1.7,
+    "2026": -11.9
+   }
+  },
+  "lb56_top1": {
+   "final": 14046.0,
+   "returnPct": 40.5,
+   "maxDrawdownPct": -71.2,
+   "byYearPct": {
+    "2023": 0.0,
+    "2024": 208.4,
+    "2025": -27.6,
+    "2026": -43.8
+   }
+  },
+  "lb56_top2": {
+   "final": 19723.0,
+   "returnPct": 97.2,
+   "maxDrawdownPct": -59.6,
+   "byYearPct": {
+    "2023": 0.0,
+    "2024": 178.2,
+    "2025": -10.7,
+    "2026": -26.4
+   }
+  },
+  "lb56_top3": {
+   "final": 15327.0,
+   "returnPct": 53.3,
+   "maxDrawdownPct": -57.3,
+   "byYearPct": {
+    "2023": 0.0,
+    "2024": 95.2,
+    "2025": -3.9,
+    "2026": -24.4
+   }
+  }
+ }
+}
