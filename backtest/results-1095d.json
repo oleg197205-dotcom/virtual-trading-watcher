@@ -1,0 +1,706 @@
+{
+ "generatedAt": "2026-11-23T07:31:27+00:00",
+ "days": 1095,
+ "coins": [
+  "BTC",
+  "ETH",
+  "SOL",
+  "XRP",
+  "DOGE",
+  "AVAX",
+  "LINK"
+ ],
+ "fees": [
+  0.001,
+  0.004
+ ],
+ "riskUsd": 100.0,
+ "s1": {
+  "как в видео": {
+   "fee 0.1%": {
+    "trades": 837,
+    "winRate": 22.5,
+    "avgR": -0.102,
+    "totalR": -85.17,
+    "usd": -8517.3,
+    "maxDrawdownR": -175.25,
+    "best": 15.93,
+    "worst": -2.38
+   },
+   "fee 0.4%": {
+    "trades": 837,
+    "winRate": 20.8,
+    "avgR": -0.938,
+    "totalR": -784.99,
+    "usd": -78498.8,
+    "maxDrawdownR": -786.64,
+    "best": 14.36,
+    "worst": -6.51
+   },
+   "byCoin": {
+    "BTC": {
+     "trades": 107,
+     "winRate": 31.8,
+     "avgR": -0.009,
+     "totalR": -0.96,
+     "usd": -95.87,
+     "maxDrawdownR": -13.24,
+     "best": 8.39,
+     "worst": -2.03
+    },
+    "ETH": {
+     "trades": 136,
+     "winRate": 23.5,
+     "avgR": 0.153,
+     "totalR": 20.85,
+     "usd": 2085.2,
+     "maxDrawdownR": -34.25,
+     "best": 15.93,
+     "worst": -1.56
+    },
+    "SOL": {
+     "trades": 111,
+     "winRate": 16.2,
+     "avgR": -0.294,
+     "totalR": -32.64,
+     "usd": -3264.23,
+     "maxDrawdownR": -43.67,
+     "best": 11.58,
+     "worst": -1.5
+    },
+    "XRP": {
+     "trades": 129,
+     "winRate": 24.0,
+     "avgR": -0.195,
+     "totalR": -25.21,
+     "usd": -2520.76,
+     "maxDrawdownR": -41.48,
+     "best": 9.96,
+     "worst": -1.84
+    },
+    "DOGE": {
+     "trades": 132,
+     "winRate": 16.7,
+     "avgR": -0.303,
+     "totalR": -39.95,
+     "usd": -3995.47,
+     "maxDrawdownR": -59.8,
+     "best": 10.44,
+     "worst": -2.38
+    },
+    "AVAX": {
+     "trades": 90,
+     "winRate": 22.2,
+     "avgR": -0.232,
+     "totalR": -20.88,
+     "usd": -2088.45,
+     "maxDrawdownR": -26.34,
+     "best": 12.98,
+     "worst": -1.53
+    },
+    "LINK": {
+     "trades": 132,
+     "winRate": 23.5,
+     "avgR": 0.103,
+     "totalR": 13.62,
+     "usd": 1362.29,
+     "maxDrawdownR": -22.32,
+     "best": 14.06,
+     "worst": -1.61
+    }
+   },
+   "medianStopPct": 0.835
+  },
+  "только если цель ≥ 2R": {
+   "fee 0.1%": {
+    "trades": 764,
+    "winRate": 19.2,
+    "avgR": -0.118,
+    "totalR": -90.2,
+    "usd": -9020.21,
+    "maxDrawdownR": -180.94,
+    "best": 15.93,
+    "worst": -2.38
+   },
+   "fee 0.4%": {
+    "trades": 764,
+    "winRate": 18.3,
+    "avgR": -0.999,
+    "totalR": -763.01,
+    "usd": -76301.28,
+    "maxDrawdownR": -764.67,
+    "best": 14.36,
+    "worst": -6.51
+   },
+   "byCoin": {
+    "BTC": {
+     "trades": 93,
+     "winRate": 25.8,
+     "avgR": -0.028,
+     "totalR": -2.58,
+     "usd": -258.1,
+     "maxDrawdownR": -16.51,
+     "best": 8.39,
+     "worst": -2.03
+    },
+    "ETH": {
+     "trades": 126,
+     "winRate": 22.2,
+     "avgR": 0.195,
+     "totalR": 24.54,
+     "usd": 2454.04,
+     "maxDrawdownR": -29.98,
+     "best": 15.93,
+     "worst": -1.56
+    },
+    "SOL": {
+     "trades": 106,
+     "winRate": 14.2,
+     "avgR": -0.321,
+     "totalR": -34.01,
+     "usd": -3400.96,
+     "maxDrawdownR": -46.16,
+     "best": 11.58,
+     "worst": -1.5
+    },
+    "XRP": {
+     "trades": 116,
+     "winRate": 18.1,
+     "avgR": -0.294,
+     "totalR": -34.14,
+     "usd": -3414.06,
+     "maxDrawdownR": -40.61,
+     "best": 9.96,
+     "worst": -1.84
+    },
+    "DOGE": {
+     "trades": 123,
+     "winRate": 16.3,
+     "avgR": -0.284,
+     "totalR": -34.92,
+     "usd": -3492.12,
+     "maxDrawdownR": -55.06,
+     "best": 10.44,
+     "worst": -2.38
+    },
+    "AVAX": {
+     "trades": 78,
+     "winRate": 15.4,
+     "avgR": -0.311,
+     "totalR": -24.22,
+     "usd": -2422.05,
+     "maxDrawdownR": -27.85,
+     "best": 12.98,
+     "worst": -1.53
+    },
+    "LINK": {
+     "trades": 122,
+     "winRate": 22.1,
+     "avgR": 0.124,
+     "totalR": 15.13,
+     "usd": 1513.03,
+     "maxDrawdownR": -23.67,
+     "best": 14.06,
+     "worst": -1.61
+    }
+   },
+   "medianStopPct": 0.796
+  }
+ },
+ "s2": {
+  "стоп под каналом, цель 3R": {
+   "fee 0.1%": {
+    "trades": 273,
+    "winRate": 35.5,
+    "avgR": -0.017,
+    "totalR": -4.64,
+    "usd": -464.04,
+    "maxDrawdownR": -19.24,
+    "best": 2.98,
+    "worst": -1.2
+   },
+   "fee 0.4%": {
+    "trades": 273,
+    "winRate": 34.4,
+    "avgR": -0.155,
+    "totalR": -42.4,
+    "usd": -4239.72,
+    "maxDrawdownR": -47.8,
+    "best": 2.94,
+    "worst": -1.78
+   },
+   "byCoin": {
+    "BTC": {
+     "trades": 14,
+     "winRate": 42.9,
+     "avgR": -0.029,
+     "totalR": -0.41,
+     "usd": -40.98,
+     "maxDrawdownR": -4.2,
+     "best": 2.93,
+     "worst": -1.15
+    },
+    "ETH": {
+     "trades": 36,
+     "winRate": 30.6,
+     "avgR": -0.259,
+     "totalR": -9.34,
+     "usd": -933.88,
+     "maxDrawdownR": -14.92,
+     "best": 2.94,
+     "worst": -1.1
+    },
+    "SOL": {
+     "trades": 49,
+     "winRate": 38.8,
+     "avgR": 0.069,
+     "totalR": 3.37,
+     "usd": 336.62,
+     "maxDrawdownR": -7.14,
+     "best": 2.97,
+     "worst": -1.08
+    },
+    "XRP": {
+     "trades": 34,
+     "winRate": 38.2,
+     "avgR": -0.011,
+     "totalR": -0.39,
+     "usd": -38.77,
+     "maxDrawdownR": -12.31,
+     "best": 2.98,
+     "worst": -1.2
+    },
+    "DOGE": {
+     "trades": 49,
+     "winRate": 34.7,
+     "avgR": -0.007,
+     "totalR": -0.34,
+     "usd": -34.31,
+     "maxDrawdownR": -10.33,
+     "best": 2.97,
+     "worst": -1.09
+    },
+    "AVAX": {
+     "trades": 49,
+     "winRate": 32.7,
+     "avgR": -0.007,
+     "totalR": -0.36,
+     "usd": -36.36,
+     "maxDrawdownR": -15.5,
+     "best": 2.98,
+     "worst": -1.13
+    },
+    "LINK": {
+     "trades": 42,
+     "winRate": 35.7,
+     "avgR": 0.068,
+     "totalR": 2.84,
+     "usd": 283.64,
+     "maxDrawdownR": -10.33,
+     "best": 2.97,
+     "worst": -1.11
+    }
+   },
+   "medianStopPct": 5.049
+  },
+  "стоп под каналом, цель 10R": {
+   "fee 0.1%": {
+    "trades": 268,
+    "winRate": 32.1,
+    "avgR": 0.045,
+    "totalR": 12.02,
+    "usd": 1202.1,
+    "maxDrawdownR": -25.19,
+    "best": 9.96,
+    "worst": -1.2
+   },
+   "fee 0.4%": {
+    "trades": 268,
+    "winRate": 31.0,
+    "avgR": -0.094,
+    "totalR": -25.31,
+    "usd": -2530.96,
+    "maxDrawdownR": -51.64,
+    "best": 9.83,
+    "worst": -1.78
+   },
+   "byCoin": {
+    "BTC": {
+     "trades": 14,
+     "winRate": 42.9,
+     "avgR": 0.567,
+     "totalR": 7.94,
+     "usd": 793.84,
+     "maxDrawdownR": -4.2,
+     "best": 9.89,
+     "worst": -1.15
+    },
+    "ETH": {
+     "trades": 36,
+     "winRate": 27.8,
+     "avgR": -0.121,
+     "totalR": -4.36,
+     "usd": -435.6,
+     "maxDrawdownR": -14.92,
+     "best": 9.92,
+     "worst": -1.1
+    },
+    "SOL": {
+     "trades": 49,
+     "winRate": 32.7,
+     "avgR": -0.178,
+     "totalR": -8.72,
+     "usd": -872.0,
+     "maxDrawdownR": -13.17,
+     "best": 3.91,
+     "worst": -1.08
+    },
+    "XRP": {
+     "trades": 33,
+     "winRate": 36.4,
+     "avgR": -0.156,
+     "totalR": -5.13,
+     "usd": -513.3,
+     "maxDrawdownR": -13.98,
+     "best": 4.63,
+     "worst": -1.2
+    },
+    "DOGE": {
+     "trades": 48,
+     "winRate": 31.2,
+     "avgR": 0.162,
+     "totalR": 7.79,
+     "usd": 778.9,
+     "maxDrawdownR": -10.39,
+     "best": 9.96,
+     "worst": -1.09
+    },
+    "AVAX": {
+     "trades": 47,
+     "winRate": 27.7,
+     "avgR": -0.027,
+     "totalR": -1.29,
+     "usd": -128.83,
+     "maxDrawdownR": -23.73,
+     "best": 9.9,
+     "worst": -1.13
+    },
+    "LINK": {
+     "trades": 41,
+     "winRate": 34.1,
+     "avgR": 0.385,
+     "totalR": 15.79,
+     "usd": 1579.08,
+     "maxDrawdownR": -14.21,
+     "best": 9.89,
+     "worst": -1.11
+    }
+   },
+   "medianStopPct": 5.041
+  },
+  "стоп под свечой пробоя, цель 3R": {
+   "fee 0.1%": {
+    "trades": 300,
+    "winRate": 22.7,
+    "avgR": -0.22,
+    "totalR": -65.91,
+    "usd": -6590.75,
+    "maxDrawdownR": -82.38,
+    "best": 2.97,
+    "worst": -1.26
+   },
+   "fee 0.4%": {
+    "trades": 300,
+    "winRate": 22.3,
+    "avgR": -0.526,
+    "totalR": -157.92,
+    "usd": -15792.22,
+    "maxDrawdownR": -164.69,
+    "best": 2.87,
+    "worst": -2.05
+   },
+   "byCoin": {
+    "BTC": {
+     "trades": 15,
+     "winRate": 26.7,
+     "avgR": -0.221,
+     "totalR": -3.32,
+     "usd": -332.01,
+     "maxDrawdownR": -6.85,
+     "best": 2.95,
+     "worst": -1.24
+    },
+    "ETH": {
+     "trades": 38,
+     "winRate": 15.8,
+     "avgR": -0.488,
+     "totalR": -18.56,
+     "usd": -1855.9,
+     "maxDrawdownR": -23.19,
+     "best": 2.94,
+     "worst": -1.25
+    },
+    "SOL": {
+     "trades": 53,
+     "winRate": 24.5,
+     "avgR": -0.166,
+     "totalR": -8.79,
+     "usd": -878.93,
+     "maxDrawdownR": -12.77,
+     "best": 2.94,
+     "worst": -1.18
+    },
+    "XRP": {
+     "trades": 38,
+     "winRate": 26.3,
+     "avgR": -0.116,
+     "totalR": -4.43,
+     "usd": -442.55,
+     "maxDrawdownR": -14.09,
+     "best": 2.96,
+     "worst": -1.26
+    },
+    "DOGE": {
+     "trades": 54,
+     "winRate": 16.7,
+     "avgR": -0.423,
+     "totalR": -22.82,
+     "usd": -2282.18,
+     "maxDrawdownR": -27.39,
+     "best": 2.97,
+     "worst": -1.19
+    },
+    "AVAX": {
+     "trades": 55,
+     "winRate": 21.8,
+     "avgR": -0.212,
+     "totalR": -11.66,
+     "usd": -1166.26,
+     "maxDrawdownR": -18.41,
+     "best": 2.94,
+     "worst": -1.26
+    },
+    "LINK": {
+     "trades": 47,
+     "winRate": 29.8,
+     "avgR": 0.078,
+     "totalR": 3.67,
+     "usd": 367.08,
+     "maxDrawdownR": -9.27,
+     "best": 2.93,
+     "worst": -1.21
+    }
+   },
+   "medianStopPct": 2.186
+  }
+ },
+ "s3": {
+  "BTC": {
+   "13/17 after green": {
+    "n": 469,
+    "avgNextPct": 0.0146,
+    "upShare": 46.9
+   },
+   "other after red": {
+    "n": 2765,
+    "avgNextPct": 0.0436,
+    "upShare": 55.1
+   },
+   "other after green": {
+    "n": 2868,
+    "avgNextPct": -0.0062,
+    "upShare": 47.2
+   },
+   "13/17 after red": {
+    "n": 461,
+    "avgNextPct": -0.0612,
+    "upShare": 51.4
+   }
+  },
+  "ETH": {
+   "13/17 after green": {
+    "n": 457,
+    "avgNextPct": 0.007,
+    "upShare": 50.3
+   },
+   "other after red": {
+    "n": 2747,
+    "avgNextPct": 0.0178,
+    "upShare": 53.2
+   },
+   "other after green": {
+    "n": 2886,
+    "avgNextPct": 0.032,
+    "upShare": 49.0
+   },
+   "13/17 after red": {
+    "n": 473,
+    "avgNextPct": -0.214,
+    "upShare": 49.0
+   }
+  },
+  "SOL": {
+   "13/17 after green": {
+    "n": 449,
+    "avgNextPct": -0.09,
+    "upShare": 46.5
+   },
+   "other after red": {
+    "n": 2762,
+    "avgNextPct": 0.0526,
+    "upShare": 52.7
+   },
+   "other after green": {
+    "n": 2871,
+    "avgNextPct": 0.0412,
+    "upShare": 49.5
+   },
+   "13/17 after red": {
+    "n": 481,
+    "avgNextPct": -0.2096,
+    "upShare": 44.5
+   }
+  },
+  "XRP": {
+   "13/17 after red": {
+    "n": 472,
+    "avgNextPct": -0.0151,
+    "upShare": 50.2
+   },
+   "13/17 after green": {
+    "n": 458,
+    "avgNextPct": 0.1544,
+    "upShare": 49.1
+   },
+   "other after red": {
+    "n": 2817,
+    "avgNextPct": 0.0288,
+    "upShare": 52.0
+   },
+   "other after green": {
+    "n": 2816,
+    "avgNextPct": -0.0036,
+    "upShare": 46.9
+   }
+  },
+  "DOGE": {
+   "13/17 after red": {
+    "n": 466,
+    "avgNextPct": -0.2165,
+    "upShare": 48.3
+   },
+   "13/17 after green": {
+    "n": 464,
+    "avgNextPct": 0.1533,
+    "upShare": 50.4
+   },
+   "other after red": {
+    "n": 2795,
+    "avgNextPct": 0.0186,
+    "upShare": 52.0
+   },
+   "other after green": {
+    "n": 2838,
+    "avgNextPct": 0.0244,
+    "upShare": 48.3
+   }
+  },
+  "AVAX": {
+   "13/17 after green": {
+    "n": 447,
+    "avgNextPct": -0.0613,
+    "upShare": 45.6
+   },
+   "other after red": {
+    "n": 2825,
+    "avgNextPct": 0.0135,
+    "upShare": 49.6
+   },
+   "other after green": {
+    "n": 2808,
+    "avgNextPct": 0.0275,
+    "upShare": 45.9
+   },
+   "13/17 after red": {
+    "n": 483,
+    "avgNextPct": -0.1436,
+    "upShare": 47.4
+   }
+  },
+  "LINK": {
+   "13/17 after green": {
+    "n": 472,
+    "avgNextPct": -0.0984,
+    "upShare": 49.6
+   },
+   "other after red": {
+    "n": 2803,
+    "avgNextPct": 0.0434,
+    "upShare": 52.5
+   },
+   "other after green": {
+    "n": 2830,
+    "avgNextPct": 0.017,
+    "upShare": 48.1
+   },
+   "13/17 after red": {
+    "n": 458,
+    "avgNextPct": -0.1415,
+    "upShare": 46.7
+   }
+  }
+ },
+ "buyHold": {
+  "BTC": 64.1,
+  "ETH": -16.8,
+  "SOL": 26.6,
+  "XRP": 51.6,
+  "DOGE": -28.0,
+  "AVAX": -67.6,
+  "LINK": -37.9
+ },
+ "data": {
+  "BTC": {
+   "bars15": 105064,
+   "bars60": 26271,
+   "from": "2023-11-24",
+   "to": "2026-11-23"
+  },
+  "ETH": {
+   "bars15": 105062,
+   "bars60": 26271,
+   "from": "2023-11-24",
+   "to": "2026-11-23"
+  },
+  "SOL": {
+   "bars15": 105063,
+   "bars60": 26271,
+   "from": "2023-11-24",
+   "to": "2026-11-23"
+  },
+  "XRP": {
+   "bars15": 105063,
+   "bars60": 26271,
+   "from": "2023-11-24",
+   "to": "2026-11-23"
+  },
+  "DOGE": {
+   "bars15": 105064,
+   "bars60": 26271,
+   "from": "2023-11-24",
+   "to": "2026-11-23"
+  },
+  "AVAX": {
+   "bars15": 105050,
+   "bars60": 26271,
+   "from": "2023-11-24",
+   "to": "2026-11-23"
+  },
+  "LINK": {
+   "bars15": 105064,
+   "bars60": 26271,
+   "from": "2023-11-24",
+   "to": "2026-11-23"
+  }
+ }
+}
