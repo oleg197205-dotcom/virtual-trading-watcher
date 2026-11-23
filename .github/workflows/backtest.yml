@@ -1,0 +1,39 @@
+name: backtest
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: backtest
+  cancel-in-progress: false
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run backtests (virtual money, learning only)
+        run: python backtest/run_backtests.py
+
+      - name: Save results
+        run: |
+          git config user.name "watcher-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add backtest/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -q -m "backtest: $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do
+            if git push -q; then exit 0; fi
+            git pull -q --rebase origin "${GITHUB_REF_NAME}" || true
+            sleep 3
+          done
+          exit 1
