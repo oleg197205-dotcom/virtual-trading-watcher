@@ -1,12 +1,17 @@
 name: watcher
 
+# GitHub runs "*/5" schedules only on a best-effort basis (often hours apart on a quiet repo),
+# so each run keeps checking every 5 minutes for almost 6 hours and then starts the next run itself.
+# The schedule below is only a safety net that restarts the loop if a run was lost.
+
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "17 */2 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: watcher
@@ -15,7 +20,7 @@ concurrency:
 jobs:
   watch:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 358
     steps:
       - uses: actions/checkout@v4
 
@@ -23,19 +28,32 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Check prices and trade (virtual money only)
-        run: python watcher/watch.py
-
-      - name: Save state
+      - name: Check prices every 5 minutes (virtual money only)
+        env:
+          LOOP_SECONDS: "20700"   # 5 h 45 min
         run: |
           git config user.name "watcher-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add state/state.json
-          if git diff --cached --quiet; then echo "nothing to save"; exit 0; fi
-          git commit -q -m "watcher: $(date -u +%Y-%m-%dT%H:%MZ)"
-          for i in 1 2 3; do
-            if git push -q; then exit 0; fi
-            git pull -q --rebase origin "${GITHUB_REF_NAME}" || true
-            sleep 3
+          start=$(date +%s)
+          while :; do
+            git pull -q --rebase origin "${GITHUB_REF_NAME}" || git rebase --abort || true
+            python watcher/watch.py || echo "watch.py failed"
+            git add state/state.json
+            if ! git diff --cached --quiet; then
+              git commit -q -m "watcher: $(date -u +%Y-%m-%dT%H:%MZ)"
+              for i in 1 2 3; do
+                git push -q && break
+                git pull -q --rebase origin "${GITHUB_REF_NAME}" || true
+                sleep 3
+              done
+            fi
+            now=$(date +%s)
+            if [ $((now - start)) -ge "$LOOP_SECONDS" ]; then break; fi
+            sleep $((300 - now % 300))
           done
-          exit 1
+
+      - name: Start the next run
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run watch.yml --ref "${GITHUB_REF_NAME}" || true
