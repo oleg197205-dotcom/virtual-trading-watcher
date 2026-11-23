@@ -61,8 +61,22 @@ def candles(coin: str, gran: int) -> list[tuple]:
         with gzip.open(path, "rt") as f:
             for r in csv.reader(f):
                 rows[int(r[0])] = tuple(float(x) for x in r[1:])
-    have_to = max(rows) if rows else start
-    t = max(start, have_to)
+    spans = []
+    if not rows or min(rows) > start + gran:
+        spans.append((start, min(rows) if rows else end))
+    if rows:
+        spans.append((max(rows), end))
+    for t, stop_at in spans:
+        _download(coin, gran, t, stop_at, rows)
+    keep = sorted(k for k in rows if k >= start)
+    with gzip.open(path, "wt") as f:
+        w = csv.writer(f)
+        for k in keep:
+            w.writerow([k, *rows[k]])
+    return [(k, *rows[k]) for k in keep]
+
+
+def _download(coin, gran, t, end, rows):
     while t < end:
         t2 = min(t + 300 * gran, end)
         url = (f"https://api.exchange.coinbase.com/products/{coin}-USD/candles?granularity={gran}"
@@ -72,12 +86,6 @@ def candles(coin: str, gran: int) -> list[tuple]:
             rows[int(c[0])] = (float(c[3]), float(c[2]), float(c[1]), float(c[4]), float(c[5]))
         t = t2
         time.sleep(0.15)
-    keep = sorted(k for k in rows if k >= start)
-    with gzip.open(path, "wt") as f:
-        w = csv.writer(f)
-        for k in keep:
-            w.writerow([k, *rows[k]])
-    return [(k, *rows[k]) for k in keep]
 
 
 # ---------------------------------------------------------------- trade bookkeeping
