@@ -2,6 +2,10 @@ name: backtest
 
 on:
   workflow_dispatch:
+    inputs:
+      days:
+        description: "How many days of history"
+        default: "365"
 
 permissions:
   contents: write
@@ -22,7 +26,11 @@ jobs:
           python-version: "3.12"
 
       - name: Run backtests (virtual money, learning only)
-        run: python backtest/run_backtests.py
+        env:
+          BT_DAYS: ${{ inputs.days }}
+        run: |
+          python backtest/run_backtests.py
+          cp backtest/results.json "backtest/results-${BT_DAYS}d.json"
 
       - name: Save results
         run: |
