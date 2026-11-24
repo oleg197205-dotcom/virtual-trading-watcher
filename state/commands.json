@@ -1,4 +1,19 @@
 {
  "comment": "Claude adds decisions here (sell after bad news, mark news checked). Each command needs a unique id; the watcher applies each id once.",
- "commands": []
+ "commands": [
+  {
+   "id": "2026-11-24-ALGO-news",
+   "action": "newsChecked",
+   "book": "hype",
+   "asset": "ALGO",
+   "note": "Крупный старый проект Algorand; рост без тревожных новостей (ни взломов, ни делистинга), держим по правилам."
+  },
+  {
+   "id": "2026-11-24-QNT-news",
+   "action": "newsChecked",
+   "book": "hype",
+   "asset": "QNT",
+   "note": "Quant — известный проект для банков (токенизированные депозиты); тревожных новостей нет, держим по правилам."
+  }
+ ]
 }
