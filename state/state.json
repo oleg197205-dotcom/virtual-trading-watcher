@@ -25,9 +25,9 @@
      "name": "Venice Token",
      "stop": 25.0008,
      "high": 30.33,
-     "last": 26.3,
+     "last": 26.17,
      "newsChecked": false,
-     "lastTs": "2026-11-28T05:10:00+00:00"
+     "lastTs": "2026-11-28T05:15:00+00:00"
     },
     "SEI": {
      "qty": 43937.703,
@@ -40,9 +40,9 @@
      "name": "Sei",
      "stop": 0.0349834,
      "high": 0.041157,
-     "last": 0.038636,
+     "last": 0.038418,
      "newsChecked": false,
-     "lastTs": "2026-11-28T05:10:00+00:00",
+     "lastTs": "2026-11-28T05:15:00+00:00",
      "trailing": true
     },
     "ZRO": {
@@ -56,9 +56,9 @@
      "name": "LayerZero",
      "stop": 0.9768,
      "high": 1.15,
-     "last": 1.09,
+     "last": 1.08,
      "newsChecked": false,
-     "lastTs": "2026-11-28T05:10:00+00:00"
+     "lastTs": "2026-11-28T05:15:00+00:00"
     }
    },
    "cooldown": {},
@@ -115,9 +115,9 @@
  },
  "market": {
   "prices": {
-   "BTC": 59707.6,
-   "ETH": 1654.56,
-   "SOL": 71.23
+   "BTC": 59720.4,
+   "ETH": 1656.59,
+   "SOL": 71.28
   },
   "closes": {
    "BTC": [
@@ -479,7 +479,7 @@
     },
     {
      "d": "2026-11-28",
-     "c": 59707.6
+     "c": 59720.4
     }
    ],
    "ETH": [
@@ -841,7 +841,7 @@
     },
     {
      "d": "2026-11-28",
-     "c": 1654.56
+     "c": 1656.59
     }
    ],
    "SOL": [
@@ -1203,7 +1203,7 @@
     },
     {
      "d": "2026-11-28",
-     "c": 71.23
+     "c": 71.28
     }
    ]
   },
@@ -1217,7 +1217,7 @@
    "ETH": 1752.33,
    "SOL": 73.83
   },
-  "updatedAt": "2026-11-28T05:10:00+00:00",
+  "updatedAt": "2026-11-28T05:15:00+00:00",
   "source": "Kraken",
   "historyDay": "2026-11-28"
  },
@@ -9471,67 +9471,67 @@
   "historyDay": "2026-11-28"
  },
  "scan": {
-  "updatedAt": "2026-11-28T05:10:00+00:00",
-  "updatedText": "28.11.2026, 06:10 (Берлин)",
+  "updatedAt": "2026-11-28T05:15:00+00:00",
+  "updatedText": "28.11.2026, 06:15 (Берлин)",
   "source": "CoinLore top 200",
   "candidates": [
    {
-    "sym": "DOGE",
-    "name": "Dogecoin",
-    "price": 0.057306,
-    "ch24": 0.0,
+    "sym": "BR",
+    "name": "Bedrock",
+    "price": 0.388634,
+    "ch24": 0.77,
     "ch1h": 0.0,
-    "vol": 0,
+    "vol": 2671061,
     "ok": false,
     "verdict": "мало роста"
    },
    {
-    "sym": "CNFI",
-    "name": "Connect Financial",
-    "price": 0.046821,
-    "ch24": 0.0,
+    "sym": "HOT",
+    "name": "Holo",
+    "price": 0.000332,
+    "ch24": 0.35,
     "ch1h": 0.0,
-    "vol": 0,
+    "vol": 3624797,
     "ok": false,
     "verdict": "мало роста"
    },
    {
-    "sym": "WORLD",
-    "name": "World Token",
-    "price": 0.000998,
-    "ch24": 0.0,
+    "sym": "PROM",
+    "name": "Prometeus",
+    "price": 4.73,
+    "ch24": 0.29,
     "ch1h": 0.0,
-    "vol": 0,
+    "vol": 2602471,
     "ok": false,
     "verdict": "мало роста"
    },
    {
-    "sym": "BALPHA",
-    "name": "bAlpha",
-    "price": 1.28,
-    "ch24": 0.0,
+    "sym": "LBT",
+    "name": "Law Blocks",
+    "price": 0.31682,
+    "ch24": 0.2,
     "ch1h": 0.0,
-    "vol": 0,
+    "vol": 701417,
     "ok": false,
     "verdict": "мало роста"
    },
    {
-    "sym": "GFARM2",
-    "name": "Gains V2",
-    "price": 263.08,
-    "ch24": 0.0,
+    "sym": "NFT",
+    "name": "APENFT",
+    "price": 1.81e-07,
+    "ch24": 0.19,
     "ch1h": 0.0,
-    "vol": 0,
+    "vol": 4153325,
     "ok": false,
     "verdict": "мало роста"
    },
    {
-    "sym": "WATCH",
-    "name": "Yieldwatch",
-    "price": 0.005672,
-    "ch24": 0.0,
+    "sym": "OZO",
+    "name": "Ozone Chain",
+    "price": 0.222235,
+    "ch24": 0.19,
     "ch1h": 0.0,
-    "vol": 0,
+    "vol": 202525,
     "ok": false,
     "verdict": "мало роста"
    }
@@ -9930,10 +9930,10 @@
   },
   "2026-11-28": {
    "date": "2026-11-28",
-   "t": "2026-11-28T05:10:00+00:00",
+   "t": "2026-11-28T05:15:00+00:00",
    "equity": 10000.0,
-   "hype": 10743.67,
-   "benchmark": 8180.85,
+   "hype": 10712.2,
+   "benchmark": 8186.69,
    "stocks": 9983.0,
    "spy": 10124.71
   }
@@ -10086,17 +10086,17 @@
  ],
  "health": {
   "errors": [],
-  "kraken": "2026-11-28T05:10:00+00:00",
-  "coinlore": "2026-11-28T05:10:00+00:00",
+  "kraken": "2026-11-28T05:15:00+00:00",
+  "coinlore": "2026-11-28T05:15:00+00:00",
   "yahoo": "2026-11-27T23:00:01+00:00",
-  "lastRun": "2026-11-28T05:10:00+00:00",
-  "runs": 1441
+  "lastRun": "2026-11-28T05:15:00+00:00",
+  "runs": 1442
  },
  "rulesVersion": 3,
  "commandsDone": [
   "2026-11-24-ALGO-news",
   "2026-11-24-QNT-news"
  ],
- "lastRun": "2026-11-28T05:10:00+00:00",
- "lastRunText": "28.11.2026, 06:10 (Берлин)"
+ "lastRun": "2026-11-28T05:15:00+00:00",
+ "lastRunText": "28.11.2026, 06:15 (Берлин)"
 }
